@@ -7,7 +7,7 @@ app = FastAPI(title="FastAPI CRUD App")
 # Root endpoint
 @app.get("/getrequest")
 async def get_request():
-    return "Hihi"
+    return {"message": "hihi"}
 
 # Run with: uvicorn app.main:app --reload
 if __name__ == "__main__":
